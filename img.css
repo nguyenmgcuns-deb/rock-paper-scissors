@@ -1,0 +1,132 @@
+@import url('https://fonts.googleapis.com/css2?family=Asap:ital,wght@0,100..900;1,100..900&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+    background-color: rgb(33, 113, 113);
+  }
+  header {
+    background: rgb(226, 216, 216);
+    padding: 20px;
+    border: 30px;
+  }
+  
+  header > h1 {
+    color: #127e94;
+    text-align: center;
+    font-family: Asap, sans-serif;
+  }
+  
+  .score-board {
+    margin: 20px auto;
+    border: 4px solid white;
+    width: 250px;
+    color: white;
+    font-size: 50px;
+    padding: 20px;
+    font-family: Asap, sans-serif;
+    position: relative;
+    text-align: center;
+    background: rgba(255, 255, 255, 0.1); /* Semi-transparent background */
+    border-radius: 15px; /* Smooth rounded corners */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3); /* Soft shadow */
+}
+  
+.badge {
+  background: red;
+  color: white;
+  font-size: 16px;
+  padding: 5px 15px;
+  font-family: Asap, sans-serif;
+  border-radius: 10px;
+  font-weight: bold;
+  box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+  
+  #user-label {
+    position: absolute;
+    top: -15px;
+    left: 20px;
+}
+
+#computer-label {
+    position: absolute;
+    top: -15px;
+    right: 20px;
+}
+   
+
+  .result{
+    font-size: 40px;
+    color: white;
+  }
+  .result>p {
+    text-align: center;
+    font-weight: bold;
+    font-family: Asap,sans-serif;
+  }
+  
+  .choices{
+    margin-top: 50px 0;
+    text-align: center;
+  }
+  
+  .choice{
+    border:4px solid white;
+    border-radius: 75%;
+    margin:0 20px;
+    padding: 30px;
+    display:inline-block;
+    transition: all 0.3s ease;
+  }
+  .choice:hover{
+    cursor: pointer;
+    background: #d1d7eb;
+  }
+
+  .choice > img {
+    width: 100px;
+    aspect-ratio: 1;
+  }
+  
+ #action-message{
+    text-align: center;
+    color: white;
+    font-family: Asap, sans-serif;
+    font-weight: bold;
+    font-size: 20px;
+    margin-top: 20px;
+  }
+  .green-glow{
+    border: 4px solid green;
+    box-shadow: 0 0 10px green;
+  }
+  
+  .red-glow{
+    border: 4px solid red;
+    box-shadow: 0 0 10px red;
+  }
+  #top-right-controls {
+    position: absolute;
+    top: 10px;
+    right: 20px;
+    z-index: 1000;
+  }
+  #top-right-controls button {
+    padding: 8px 16px;
+    font-size: 14px;
+    background-color: #ff5252;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  #top-right-controls button:hover {
+    background-color: #e53935;
+  }
